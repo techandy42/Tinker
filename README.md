@@ -1,6 +1,6 @@
 # Tinker VSCode Extension
 
-This repository contains a minimal VSCode extension that opens a screen with the text **"Tinker"** when the extension is activated.
+This repository contains a minimal VSCode extension that displays a popup window with the text **"Tinker"** when the extension is activated.
 
 ## Installation
 
