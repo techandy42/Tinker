@@ -6,8 +6,12 @@
   "engines": {
     "vscode": "^1.80.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["*"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -25,5 +29,8 @@
     "@types/node": "^20.8.10",
     "@types/vscode": "^1.80.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "litellm": "^0.12.0"
   }
 }
