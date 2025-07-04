@@ -1,7 +1,7 @@
 {
   "name": "tinker-extension",
   "displayName": "Tinker",
-  "description": "A simple VSCode extension that shows a Tinker screen on activation.",
+  "description": "A simple VSCode extension that opens a chat-like Tinker screen on activation.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -12,7 +12,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "tinker.showMessage",
+        "command": "tinker.openChat",
         "title": "Show Tinker Screen"
       }
     ]

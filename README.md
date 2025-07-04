@@ -1,6 +1,6 @@
 # Tinker VSCode Extension
 
-This repository contains a minimal VSCode extension that displays a popup window with the text **"Tinker"** when the extension is activated.
+This repository contains a minimal VSCode extension that opens a small chat window when the extension activates. Users can submit a command and see a response from a simple "Tinker" server function directly inside the chat screen.
 
 ## Installation
 
