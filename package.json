@@ -1,0 +1,29 @@
+{
+  "name": "tinker-extension",
+  "displayName": "Tinker",
+  "description": "A simple VSCode extension that shows a Tinker screen on activation.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["*"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tinker.showMessage",
+        "title": "Show Tinker Screen"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.2.2"
+  }
+}
