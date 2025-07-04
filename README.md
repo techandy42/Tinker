@@ -21,7 +21,7 @@ This repository contains a minimal VSCode extension that opens a screen with the
    This will generate a `.vsix` file.
 5. Install the generated package in VSCode:
    ```bash
-   code --install-extension tinker-extension-0.0.1.vsix
+   code --install-extension "/Users/andylee/Desktop/Tinker/tinker-extension-0.0.1.vsix"
    ```
 
 During development you can also run the extension by opening this folder in VSCode and pressing `F5` to launch the Extension Development Host.
