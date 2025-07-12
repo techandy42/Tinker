@@ -5,7 +5,7 @@ The world's first System Design Engineer AI Agent.
 <img
    src="media/tinker-screenshot-07122025.png"
    alt="Screenshot"
-   width="400"
+   width="600"
 />
 
 ## Installation
