@@ -2,6 +2,12 @@
 
 The world's first System Design Engineer AI Agent.
 
+<img
+   src="media/tinker-screenshot-07122025.png"
+   alt="Screenshot"
+   width="400"
+/>
+
 ## Installation
 
 1. Install [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/).
