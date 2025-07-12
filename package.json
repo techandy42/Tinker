@@ -1,8 +1,12 @@
 {
   "name": "tinker-extension",
   "displayName": "Tinker",
-  "description": "A simple VSCode extension that opens a chat-like Tinker screen on activation.",
+  "description": "The world's first System Design Engineer AI Agent.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techandy42/Tinker"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -10,14 +14,41 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onCommand:tinker.openChat",
+    "onView:tinkerChatView"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "tinker.openChat",
-        "title": "Show Tinker Screen"
+        "title": "Tinker: Open Chat"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "tinker",
+          "title": "Tinker",
+          "icon": "media/tinker.svg"
+        }
+      ]
+    },
+    "views": {
+      "tinker": [
+        {
+          "id": "tinkerChatView",
+          "name": "Chat",
+          "type": "webview"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "tinker.openChat",
+        "key": "ctrl+shift+alt+t",
+        "mac": "cmd+shift+alt+t",
+        "when": "!inputFocus"
       }
     ]
   },
@@ -30,7 +61,5 @@
     "@types/vscode": "^1.80.0",
     "typescript": "^5.2.2"
   },
-  "dependencies": {
-    "litellm": "^0.12.0"
-  }
+  "dependencies": {}
 }
