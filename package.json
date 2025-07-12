@@ -1,7 +1,7 @@
 {
   "name": "tinker-extension",
   "displayName": "Tinker",
-  "description": "A simple VSCode extension that opens a chat-like Tinker screen on activation.",
+  "description": "Cursor-style coding-agent chat for VS Code.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
@@ -10,14 +10,40 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onCommand:tinker.openChat",
+    "onView:tinkerChatView"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "tinker.openChat",
-        "title": "Show Tinker Screen"
+        "title": "Tinker: Open Chat"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "tinker",
+          "title": "Tinker",
+          "icon": "media/tinker.svg"
+        }
+      ]
+    },
+    "views": {
+      "tinker": [
+        {
+          "id": "tinkerChatView",
+          "name": "Chat",
+          "type": "webview"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "tinker.openChat",
+        "key": "ctrl+alt+t",
+        "when": "!inputFocus"
       }
     ]
   },
