@@ -1,6 +1,6 @@
-# Tinker VSCode Extension
+# Tinker
 
-This repository contains a minimal VSCode extension that opens a small chat window when the extension activates. Users can submit a command and see a response from a simple "Tinker" server function directly inside the chat screen.
+The world's first System Design Engineer AI Agent.
 
 ## Installation
 
@@ -24,4 +24,4 @@ This repository contains a minimal VSCode extension that opens a small chat wind
    code --install-extension "/Users/andylee/Desktop/Tinker/tinker-extension-0.0.1.vsix"
    ```
 
-During development you can also run the extension by opening this folder in VSCode and pressing `F5` to launch the Extension Development Host.
+During development you can also run the extension by opening this folder in VSCode and launching the Extension Development Host.
